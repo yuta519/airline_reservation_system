@@ -5,6 +5,11 @@
         "library/jar/jackson-core-2.13.4-javadoc.jar",
         "library/jar/jackson-databind-2.13.4.2.jar",
         "library/jar/jackson-core-2.13.4.jar",
-        "library/jar/jackson-annotations-2.13.4.jar"
+        "library/jar/jackson-annotations-2.13.4.jar",
+        "infra/jar/jackson-annotations-2.13.4-javadoc.jar",
+        "infra/jar/jackson-annotations-2.13.4.jar",
+        "infra/jar/jackson-core-2.13.4-javadoc.jar",
+        "infra/jar/jackson-core-2.13.4.jar",
+        "infra/jar/jackson-databind-2.13.4.2.jar"
     ]
 }
