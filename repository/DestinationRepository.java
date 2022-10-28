@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
-import domain.DestinationDomain;
+import entity.DestinationDomain;
 import infra.Amadeus;
 
 public class DestinationRepository {
