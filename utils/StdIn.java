@@ -7,7 +7,7 @@ public class StdIn {
         boolean hasInt = false;
         int input = 0;
         do {
-            System.out.println(message);
+            System.out.printf("%s%s%s", ConsoleColors.CYAN_BACKGROUND, message, ConsoleColors.RESET);
             if (sc.hasNextInt()) {
                 input = sc.nextInt();
                 hasInt = true;

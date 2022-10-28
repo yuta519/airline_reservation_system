@@ -13,7 +13,7 @@ public class DirectDestinations {
         destinations.forEach(destination -> {
             System.out.println(
                 ConsoleColors.GREEN + destination.name +
-                "(IATA Code:" +  destination.iataCode + ")"
+                "(IATA Code:" +  destination.iataCode + ")\n"
                 +ConsoleColors.RESET
             );
         });

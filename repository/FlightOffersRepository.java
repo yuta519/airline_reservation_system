@@ -21,14 +21,6 @@ public class FlightOffersRepository {
         String departure_date,
         String adults
     ) {
-        // ArrayNode raw_flight_offers = (ArrayNode) amadeus
-        //                                 .fetch_flight_offers(
-        //                                     "SYD",
-        //                                     "BKK",
-        //                                     "2022-12-31",
-        //                                     "2")
-        //                                 .get("data");
-
         ArrayNode raw_flight_offers = (ArrayNode) amadeus.fetch_flight_offers(
                                                 location_code,
                                                 destination_code,
@@ -38,12 +30,12 @@ public class FlightOffersRepository {
 
         ArrayList<FlightOfferEntity> flight_offers = new ArrayList<FlightOfferEntity>();
 
+        System.out.println(raw_flight_offers);
         if (!raw_flight_offers.isArray()) return flight_offers;
 
         for (JsonNode raw_flight:raw_flight_offers) {
             FlightOfferEntity flight_offer = new FlightOfferEntity(
                 raw_flight.get("price").get("currency").textValue(),
-                // raw_flight.get("price").get("total").floatValue(),
                 raw_flight.get("price").get("total").textValue(),
                 "aa",
                 raw_flight.get("source").textValue(),

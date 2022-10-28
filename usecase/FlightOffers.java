@@ -23,10 +23,30 @@ public class FlightOffers {
 
         flight_offers.forEach(flight_offer -> {
             System.out.printf(
-                "%s Ticket Price: %s (currency %s). %s\n",
+                "%s Ticket Price: %s (currency %s).\n",
                 ConsoleColors.GREEN,
                 flight_offer.totalPrice,
-                flight_offer.currency,
+                flight_offer.currency
+            );
+            System.out.printf(
+                "%s   - Airline code: %s\n",
+                ConsoleColors.GREEN,
+                flight_offer.airlineCOdes
+            );
+            System.out.printf(
+                "%s   - Information Source: %s\n",
+                ConsoleColors.GREEN,
+                flight_offer.source
+            );
+            System.out.printf(
+                "%s   - Left seats: %s\n",
+                ConsoleColors.GREEN,
+                flight_offer.bookableSeats
+            );
+            System.out.printf(
+                "%s   - Available Until: %s %s\n\n",
+                ConsoleColors.GREEN,
+                flight_offer.ticketingBy,
                 ConsoleColors.RESET
             );
         });

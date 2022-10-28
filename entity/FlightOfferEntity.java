@@ -2,7 +2,6 @@ package entity;
 
 public class FlightOfferEntity {
     public String currency;
-    // public Float totalPrice;
     public String totalPrice;
     public String airlineCOdes;
     public String source;
@@ -11,7 +10,6 @@ public class FlightOfferEntity {
 
     public FlightOfferEntity(
         String currency,
-        // Float totalPrice,
         String totalPrice,
         String airlineCOdes,
         String source,

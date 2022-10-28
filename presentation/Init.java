@@ -9,16 +9,23 @@ public class  Init {
 
     public Init() {
         this.scan =  new Scanner(System.in);
+        System.out.println("                                                                                        ");
+        System.out.println("  ██████  ██  ██████  ██████  ██████     ███████        ██████   █████  ██████  ██████  ");
+        System.out.println("  ██      ██ ██      ██      ██          ██            ██  ████ ██   ██      ██      ██ ");
+        System.out.println("  ██      ██ ██      ██      ██          █████   █████ ██ ██ ██  ██████  █████   █████  ");
+        System.out.println("  ██      ██ ██      ██      ██          ██            ████  ██      ██ ██      ██      ");
+        System.out.println("   ██████ ██  ██████  ██████  ██████     ███████        ██████   █████  ███████ ███████ ");
+        System.out.println("                                                                                        ");
         this.decide_service();
     }
 
     public void decide_service() {
-        System.out.println("==============================");
+        System.out.println("=====================================================================================");
         System.out.println("Service 1 : Search destinations! From your location, we suggest some destinations.");
         System.out.println("Service 2 : Search flight offers! ");
         System.out.println("Service 3 : For Division");
         System.out.println("To terminate this app, please input 0");
-        System.out.println("==============================");
+        System.out.println("=====================================================================================");
 
         int choice = StdIn.validate_input_int(this.scan, "PLease enter a service number : ");
 

@@ -36,3 +36,45 @@
 
 ## IATA code
 https://www.iata.org/en/publications/directories/code-search/
+
+
+## Example output
+### Service 2: Search flight offers!
+
+- Please input departure airport IATA code (ex: `YVR`)
+  - NYC
+- Please input destination airport IATA code (ex: `YVR`)
+  - NRT
+- Please input departure date. The format is yyyy-mm-dd like `2022-12-31`
+  - 2022-12-31
+- Please input number of adults.
+  - 1
+
+ Ticket Price: 791.01 (currency EUR).
+   - Airline code: aa
+   - Information Source: GDS
+   - Left seats: 9
+   - Available Until: 2022-10-31
+
+ Ticket Price: 791.01 (currency EUR).
+   - Airline code: aa
+   - Information Source: GDS
+   - Left seats: 9
+   - Available Until: 2022-10-31
+
+ Ticket Price: 791.01 (currency EUR).
+   - Airline code: aa
+   - Information Source: GDS
+   - Left seats: 9
+   - Available Until: 2022-10-31
+
+ Ticket Price: 791.01 (currency EUR).
+   - Airline code: aa
+   - Information Source: GDS
+   - Left seats: 4
+   - Available Until: 2022-10-31
+
+ Ticket Price: 791.01 (currency EUR).
+   - Airline code: aa
+   - Information Source: GDS
+   - Left seats: 3

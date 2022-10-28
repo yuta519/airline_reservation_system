@@ -60,6 +60,7 @@ public class Amadeus {
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             ObjectMapper mapper = new ObjectMapper();
+            // System.out.println(response.statusCode());
             return mapper.readTree(response.body());
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
@@ -83,12 +84,19 @@ public class Amadeus {
     public JsonNode fetch_flight_offers(
         String location_code, String destination_code, String departure_date, String adults
     ) {
+        System.out.println(
+            "https://test.api.amadeus.com/v2/shopping/flight-offers?"+
+            "originLocationCode="+location_code+
+            "&destinationLocationCode="+destination_code+
+            "&departureDate="+departure_date+
+            "&adults="+adults+"&max=10"
+        );
         return get(
             "https://test.api.amadeus.com/v2/shopping/flight-offers?"+
             "originLocationCode="+location_code+
             "&destinationLocationCode="+destination_code+
             "&departureDate="+departure_date+
-            "&adults="+adults +"&max=10"
+            "&adults="+adults+"&max=10"
         );
     }
 
