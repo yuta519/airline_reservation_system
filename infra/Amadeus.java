@@ -42,7 +42,6 @@ public class Amadeus {
 
             ObjectMapper mapper = new ObjectMapper();
             JsonNode json= mapper.readTree(response.body());
-            System.out.println(json);
             return json.get("access_token").textValue();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
@@ -55,12 +54,10 @@ public class Amadeus {
         System.out.println(json);
     }
 
-    public void fetchDirectDestinations() {
-        JsonNode json = get("https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode=BLR");
-        System.out.println(json);
+    public JsonNode fetchDirectDestinations(String airport) {
+        JsonNode json = get("https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode="+airport);
+        return json;
     }
-
-
 
     private JsonNode get(String url) {
         HttpClient client = HttpClient.newHttpClient();
