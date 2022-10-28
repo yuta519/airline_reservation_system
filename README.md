@@ -18,15 +18,9 @@
 ## Spec
 - Java openjdk 18.0.2.1 2022-08-18
 
-
-
-Try to break down features to more detail like
-
-Seating information
-Business Class
-Economy
-etc
-
-Seats should be full, if there are no more seats
-
-Other than that very good!
+## How to use
+### If you are using VScode
+1. Install "Extension Pack for Java" which is a VScode extension.
+2. Add jar files to project classpath.
+  - jar files are in infra/jar
+3. In App.java, you can click a run button above the main function.
