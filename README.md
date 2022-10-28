@@ -5,6 +5,10 @@
 - Made of Java
 
 ## Features
+- Search direct destinations
+  - Input an airport
+  - System finds some destinations where you can go directly from the airport you inputed.
+
 - Input city name and search airport information
   -
 - Search hotel information
