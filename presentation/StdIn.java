@@ -3,7 +3,7 @@ package presentation;
 import java.util.Scanner;
 
 public class  StdIn {
-    public static int decideService() {
+    public static int decide_service() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("==============================");
@@ -12,10 +12,10 @@ public class  StdIn {
         System.out.println("Service 3 : For Division");
         System.out.println("==============================");
 
-        return StdIn.validateInputInt(sc, "PLease enter a service number : ");
+        return StdIn.validate_input_int(sc, "PLease enter a service number : ");
     }
 
-    private static int validateInputInt(Scanner sc, String message) {
+    private static int validate_input_int(Scanner sc, String message) {
         boolean hasInt = false;
         int input = 0;
         do {
