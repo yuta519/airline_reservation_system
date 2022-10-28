@@ -18,6 +18,14 @@
 ## Spec
 - Java openjdk 18.0.2.1 2022-08-18
 
+## Dependencies
+- Jackson
+  - version 13.4
+
+## 3rd Party Service
+- Amadeus
+  - [Self-Service APIs](https://developers.amadeus.com/)
+
 ## How to use
 ### If you are using VScode
 1. Install "Extension Pack for Java" which is a VScode extension.
