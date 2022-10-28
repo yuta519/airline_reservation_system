@@ -23,7 +23,7 @@ public class Amadeus {
         this.TOKEN = fetchAccessToken();
     }
 
-    public String fetchAccessToken() {
+    private String fetchAccessToken() {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://test.api.amadeus.com/v1/security/oauth2/token"))
@@ -49,16 +49,6 @@ public class Amadeus {
         return "";
     }
 
-    public void fetchCheckIn() {
-        JsonNode json = get("https://test.api.amadeus.com/v2/reference-data/urls/checkin-links?airlineCode=IB");
-        System.out.println(json);
-    }
-
-    public JsonNode fetchDirectDestinations(String airport) {
-        JsonNode json = get("https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode="+airport);
-        return json;
-    }
-
     private JsonNode get(String url) {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -76,4 +66,30 @@ public class Amadeus {
         }
         return null;
     }
+
+    public void fetchCheckIn() {
+        JsonNode json = get("https://test.api.amadeus.com/v2/reference-data/urls/checkin-links?airlineCode=IB");
+        System.out.println(json);
+    }
+
+    public JsonNode fetch_direct_destinations(String airport) {
+        return get("https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode="+airport);
+    }
+
+    public JsonNode fetch_locations(String keyword) {
+        return get("https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword="+keyword);
+    }
+
+    public JsonNode fetch_flight_offers(
+        String location_code, String destination_code, String departure_date, String adults
+    ) {
+        return get(
+            "https://test.api.amadeus.com/v2/shopping/flight-offers?"+
+            "originLocationCode="+location_code+
+            "&destinationLocationCode="+destination_code+
+            "&departureDate="+departure_date+
+            "&adults="+adults +"&max=10"
+        );
+    }
+
 }

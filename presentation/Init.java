@@ -27,7 +27,7 @@ public class  Init {
             this.decide_service();
         }
         if (choice == 2) {
-            Destinations.search(this.scan);
+            FlightOffers.search(this.scan);
             this.decide_service();
         }
         if (choice == 3) {
