@@ -9,8 +9,10 @@
   - Input an airport
   - System finds some destinations where you can go directly from the airport you inputed.
 
-- Input city name and search airport information
-  -
+- Fingd Flight offers
+  - Input search condintions (deperture/destination airport, departure date, how many adults, and currency code)
+  - System find and show some flight offers.
+
 - Search hotel information
 - Get price of flight
 - Order flight tickets
@@ -40,7 +42,6 @@ https://www.iata.org/en/publications/directories/code-search/
 
 ## Example output
 ### Service 2: Search flight offers!
-
 - Please input departure airport IATA code (ex: `YVR`)
   - NYC
 - Please input destination airport IATA code (ex: `YVR`)
