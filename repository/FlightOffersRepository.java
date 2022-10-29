@@ -35,10 +35,11 @@ public class FlightOffersRepository {
         if (!raw_flight_offers.isArray()) return flight_offers;
 
         for (JsonNode raw_flight:raw_flight_offers) {
+            ArrayNode airline_codes = (ArrayNode) raw_flight.get("validatingAirlineCodes");
             FlightOfferEntity flight_offer = new FlightOfferEntity(
                 raw_flight.get("price").get("currency").textValue(),
                 raw_flight.get("price").get("total").textValue(),
-                "aa",
+                airline_codes.get(0).textValue(),
                 raw_flight.get("source").textValue(),
                 raw_flight.get("lastTicketingDate").textValue(),
                 raw_flight.get("numberOfBookableSeats").intValue()
