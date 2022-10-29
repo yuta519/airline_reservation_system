@@ -11,14 +11,16 @@ public class FlightOffers {
         String location_code,
         String destination_code,
         String departure_date,
-        String adults
+        String adults,
+        String currency_code
     ) {
         FlightOffersRepository flight_offer_repository = new FlightOffersRepository();
         ArrayList<FlightOfferEntity> flight_offers = flight_offer_repository.fetch_flight_offers(
                                                             location_code,
                                                             destination_code,
                                                             departure_date,
-                                                            adults
+                                                            adults,
+                                                            currency_code
                                                         );
 
         flight_offers.forEach(flight_offer -> {

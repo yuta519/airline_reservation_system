@@ -19,18 +19,19 @@ public class FlightOffersRepository {
         String location_code,
         String destination_code,
         String departure_date,
-        String adults
+        String adults,
+        String currency_code
     ) {
         ArrayNode raw_flight_offers = (ArrayNode) amadeus.fetch_flight_offers(
                                                 location_code,
                                                 destination_code,
                                                 departure_date,
-                                                adults
+                                                adults,
+                                                currency_code
                                             ).get("data");
 
         ArrayList<FlightOfferEntity> flight_offers = new ArrayList<FlightOfferEntity>();
 
-        System.out.println(raw_flight_offers);
         if (!raw_flight_offers.isArray()) return flight_offers;
 
         for (JsonNode raw_flight:raw_flight_offers) {

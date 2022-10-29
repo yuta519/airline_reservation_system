@@ -12,7 +12,8 @@ public class FlightOffers {
         String deperture_date = scan.next();
         System.out.println("Please input number of adults.");
         String adults = scan.next();
-        // usecase.FlightOffers.show("SYD", "BKK", "2022-12-31", "2");
-        usecase.FlightOffers.show(deperture_code, destination_code, deperture_date, adults);
+        System.out.println("Please input currency code like `CAD`");
+        String currency_code = scan.next();
+        usecase.FlightOffers.show(deperture_code, destination_code, deperture_date, adults, currency_code);
     }
 }

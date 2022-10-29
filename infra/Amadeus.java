@@ -82,21 +82,14 @@ public class Amadeus {
     }
 
     public JsonNode fetch_flight_offers(
-        String location_code, String destination_code, String departure_date, String adults
+        String location_code, String destination_code, String departure_date, String adults, String currency_code
     ) {
-        System.out.println(
-            "https://test.api.amadeus.com/v2/shopping/flight-offers?"+
-            "originLocationCode="+location_code+
-            "&destinationLocationCode="+destination_code+
-            "&departureDate="+departure_date+
-            "&adults="+adults+"&max=10"
-        );
         return get(
             "https://test.api.amadeus.com/v2/shopping/flight-offers?"+
             "originLocationCode="+location_code+
             "&destinationLocationCode="+destination_code+
             "&departureDate="+departure_date+
-            "&adults="+adults+"&max=10"
+            "&adults="+adults+"&currencyCode="+currency_code+"&max=10"
         );
     }
 
