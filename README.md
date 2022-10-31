@@ -1,4 +1,4 @@
-# Airline & Hotel Search system
+# Airline Search system
 
 ## What is this?
 - CLI app
@@ -8,14 +8,12 @@
 - Search direct destinations
   - Input an airport
   - System finds some destinations where you can go directly from the airport you inputed.
+  - You can get `city names` and `IATA codes`.
 
 - Fingd Flight offers
   - Input search condintions (deperture/destination airport, departure date, how many adults, and currency code)
   - System find and show some flight offers.
-
-- Search hotel information
-- Get price of flight
-- Order flight tickets
+  - You can get ` Airline Code`, `Information Source`,  `Total Price` and `IATA Code`, `Departure Date` and `Currency Code`.
 
 ## Spec
 - Java openjdk 18.0.2.1 2022-08-18
@@ -29,6 +27,8 @@
   - [Self-Service APIs](https://developers.amadeus.com/)
 
 ## How to use
+### Create Amadeus account to use API
+
 ### If you are using VScode
 1. Install "Extension Pack for Java" which is a VScode extension.
 2. Add jar files to project classpath.
