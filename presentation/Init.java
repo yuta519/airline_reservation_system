@@ -36,15 +36,14 @@ public class  Init {
             FlightOffers.search(this.scan);
             this.decide_service();
         }
-        if (choice == 3) {
-            Destinations.search(this.scan);
-            this.decide_service();
-        }
-
         if (choice == 0) {
             System.out.println("Thank you for using this appp. Terminating service...");
             scan.close();
             return;
+        }
+        if (choice >= 3) {
+            System.out.println("Please input your choice from 0 to 2");
+            this.decide_service();
         }
     }
 }
