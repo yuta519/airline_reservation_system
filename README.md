@@ -82,6 +82,8 @@ https://www.iata.org/en/publications/directories/code-search/
 
 
 ## Next Step
-- Convert IATA code to location name
+- Convertion from IATA code to location name
   - Currently user has to search IATA codes, when you want to use this app.
-  -
+- Booking feature
+  - Current app can only search flights.
+  - So as next step I will add a booking feature.
