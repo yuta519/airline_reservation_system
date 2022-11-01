@@ -15,6 +15,10 @@
   - System find and show some flight offers.
   - You can get ` Airline Code`, `Information Source`,  `Total Price` and `IATA Code`, `Departure Date` and `Currency Code`.
 
+## Architecture
+![architecture overview](https://raw.githubusercontent.com/yuta519/airline_reservation_system/main/doc/architecture_overview.png "arch")
+
+
 ## Spec
 - Java openjdk 18.0.2.1 2022-08-18
 
