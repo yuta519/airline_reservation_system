@@ -23,7 +23,6 @@ public class  Init {
         System.out.println("=====================================================================================");
         System.out.println("Service 1 : Search destinations! From your location, we suggest some destinations.");
         System.out.println("Service 2 : Search flight offers! ");
-        System.out.println("Service 3 : For Division");
         System.out.println("To terminate this app, please input 0");
         System.out.println("=====================================================================================");
 
