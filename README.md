@@ -4,6 +4,12 @@
 - CLI app
 - Made of Java
 
+## When use?
+- Please use this app, when you travel with airplane.
+  - If you plan to travel, you must decide a destination and find a flight.
+  - Sometimes this is boring.
+  - So this app help you.
+
 ## Features
 - Search direct destinations
   - Input an airport
@@ -13,7 +19,7 @@
 - Fingd Flight offers
   - Input search condintions (deperture/destination airport, departure date, how many adults, and currency code)
   - System find and show some flight offers.
-  - You can get ` Airline Code`, `Information Source`,  `Total Price` and `IATA Code`, `Departure Date` and `Currency Code`.
+  - You can get ` Airline Code`, `Information Source`,  `Total Price`, `IATA Code`, `Departure Date` and `Currency Code`.
 
 ## Architecture
 ![architecture overview](https://raw.githubusercontent.com/yuta519/airline_reservation_system/main/doc/architecture_overview.png "arch")
