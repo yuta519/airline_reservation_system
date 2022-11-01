@@ -1,4 +1,4 @@
-# Airline Search system
+# Airline Search System
 
 ## What is this?
 - CLI app
