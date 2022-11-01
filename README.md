@@ -79,3 +79,9 @@ https://www.iata.org/en/publications/directories/code-search/
    - Airline code: aa
    - Information Source: GDS
    - Left seats: 3
+
+
+## Next Step
+- Convert IATA code to location name
+  - Currently user has to search IATA codes, when you want to use this app.
+  -
