@@ -1,5 +1,8 @@
 package infra;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -93,4 +96,21 @@ public class Amadeus {
         );
     }
 
+    public void fetch_location_score() {
+		File file = new File("location_to_long-lati.csv");
+        try {
+			if (file.exists()) {
+				FileReader fr = new FileReader(file);
+				BufferedReader br = new BufferedReader(fr);
+				String content;
+				while ((content = br.readLine()) != null) {
+					System.out.println(content);
+				}
+				br.close();
+			}
+            // "https://test.api.amadeus.com/v1/location/analytics/category-rated-areas?latitude=41.397158&longitude=2.160873"
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+    }
 }
